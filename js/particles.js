@@ -1,4 +1,5 @@
 window.onload = function(){
+    document.getElementById('about').style.display = 'none';
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
 	
@@ -21,7 +22,7 @@ window.onload = function(){
 		})
 	}
     
-    var traits = ["1A Mechatronics", "Creativity", "Very Cool"];
+    var traits = ["Creative", "Enthusiastic", "Reliable","A Nice Guy!"];
 	var traitIndex = 0;
     var changingText = document.getElementById("changeText");
     var textOpacity = 0.1;
@@ -86,16 +87,32 @@ window.onload = function(){
             
             
         }
-        textOpacity+=0.1;
+        textOpacity+=0.01;
         
         changingText.style.opacity=textOpacity;
         counter+=1;
 	}
 	
-	setInterval(draw, 33);
+	setInterval(draw, 35);
 }
 
+function fadeElement(el, newOpacity){
+    el.style.opacity=newOpacity;
+    console.log("here!!",newOpacity);
+    
+}
 
+function showSection(idShow, idHide) {
+    
+    var shownElement = document.getElementById(idShow);
+    var hiddenElement = document.getElementById(idHide);
+    
+    hiddenElement.style.display = 'none';
+    
+    shownElement.style.display = 'block';
+    
+    
+}
 
 
 

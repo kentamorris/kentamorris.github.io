@@ -18,9 +18,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/particles.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
   </head>
-  <body>
+  <body> 
       
     <nav class="navbar navbar-fixed-top navbar-inverse" style="font-size: 1.6em;font-family: 'Agency FB'">
       <div class="container">
@@ -31,13 +31,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="font-size: 1.6em;">K. M</a>
+          <a class="navbar-brand" href="#" onclick="showSection('main','about');return false;" style="font-size: 1.6em;">K M</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#" onclick="showSection('about','main');return false;">About</a></li>
+            <li><a href="https://github.com/kentamorris" target="_blank">Github</a></li>
+            <li><a href="downloads/KMorris_Resume.pdf" target="_blank">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -52,16 +52,18 @@
         <img class="img-responsive img-thumbnail" max-width="10%" src="img/profile.png" alt="">
     </div>
 -->
-    <div class="container-fluid text-center" style="position: absolute;top: 40%;left:-1%;width:105%;transform:translateY(-40%);
+    <div class="container-fluid text-center" style="position: absolute;top: 40%;left:0%;width:100%;transform:translateY(-40%);
 ">
 <!--    <div class="bg-success text-center">-->
 <!--        <h1 >Hello, My Name is</h1>-->
-        <h1 style="font-size: 6em;font-family: 'Agency FB'">KENTA MORRIS
+        <h1 id="main" style="font-size: 6em;font-family: 'Agency FB'">KENTA MORRIS
         <br>
         <small id="changeText">
-            1B Mechatronics
         </small>
         </h1>
+        
+        <div id="about" style="position: absolute;top: 40%;left:0%;width:100%;transform:translateY(-40%);font-size: 2em;"> <p>I am currently a first year Mechatronics Engineering Student at the University of Waterloo.</p><p> My hometown is Ottawa, however much of my extended family lives in the Greater Toronto Area. I have traveled to England and most recently Japan and I love experiencing what a new city or country has to offer.</p><p>In my free time I also enjoy camping and team sports such as soccer and hockey.</p>
+</div>
         
 <!--    </div>-->
     </div>
